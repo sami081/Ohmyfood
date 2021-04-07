@@ -1,3 +1,22 @@
-.test {
-  color:blue;
+body{
+  margin:0;
+  padding:0;
+}
+.logo-header{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    margin: 30px 0 15px 0;
+
+  .restaurant-logo{
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 450px){
+  body{
+    min-width: 320px;
+  }
+
 }
