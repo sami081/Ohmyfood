@@ -1,6 +1,8 @@
 body {
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-direction: column;
 }
 
 .logo-header {
@@ -169,16 +171,20 @@ body {
 
 .card-info {
   display: flex;
-  flex-direction: column;
   height: 35%;
-  justify-content: center;
-  padding-left: 15px;
+  justify-content: space-around;
   color: black;
 }
-.card-info > h3 {
+.card-info > .text-information {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+}
+.card-info > .text-information > h3 {
   margin: 0 0 5px 0;
 }
-.card-info > p {
+.card-info > .text-information > p {
   margin: 0 0 5px 0;
 }
 
@@ -189,6 +195,53 @@ body {
 }
 .restaurant > h2 {
   margin-left: 25px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+.logo > .picture {
+  width: 1rem;
+  height: 1rem;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+}
+
+.cutlery {
+  width: 1rem;
+  height: 1rem;
+}
+
+.hands {
+  width: 1rem;
+  height: 1rem;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+footer {
+  background-color: black;
+}
+footer > h2 {
+  color: white;
+  margin-left: 25px;
+}
+
+.logo-footer {
+  width: 1rem;
+  height: 1rem;
+  padding-right: 10px;
 }
 
 @media only screen and (max-width: 450px) {
