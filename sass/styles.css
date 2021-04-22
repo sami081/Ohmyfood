@@ -403,6 +403,7 @@ footer .logo {
 }
 .information-menu > .text {
   font-family: "Roboto-thin";
+  font-size: 0.95em;
 }
 
 .text {
@@ -447,7 +448,7 @@ footer .logo {
     flex-direction: column;
     justify-content: space-between;
     padding: 10px;
-    transition: all 2000ms ease-in-out;
+    transition: all 900ms ease-in-out;
   }
 
   .name-menu:hover {
@@ -458,7 +459,6 @@ footer .logo {
     transform: rotate(1turn);
   }
   .name-menu:hover .test-sami {
-    background-color: #99E2D0;
     border-radius: 0 0.8rem 0.8rem 0;
     width: 30%;
   }
@@ -474,6 +474,7 @@ footer .logo {
     align-items: center;
     display: flex;
     transition: all 1100ms ease-in-out;
+    background-color: #99E2D0;
   }
 
   .sami-test {
@@ -528,7 +529,7 @@ footer .logo {
   }
 
   .menu-restaurant {
-    height: 1300px;
+    height: 1350px;
   }
 
   .restaurant > h2 {
@@ -609,7 +610,7 @@ footer .logo {
     outline: none;
   }
   .name-menu:hover .sami-test2 {
-    width: 10%;
+    width: 20%;
     height: 80%;
   }
   .name-menu:hover .test-sami {
@@ -617,10 +618,7 @@ footer .logo {
     /*
     -webkit-transition: height 2s ease-in-out, background 13s  ease-in-out;*/
     border-radius: 0 0 0.8rem 0.8rem;
-    height: 30%;
-  }
-  .name-menu:hover .test3 {
-    height: 70%;
+    height: 25%;
   }
 
   .test-sami {
@@ -663,10 +661,10 @@ footer .logo {
     justify-content: center;
   }
   .title > h2 {
-    margin: 15px 10px 0 0;
+    margin: 25px 10px 0 0;
   }
   .title > .logo {
-    margin: 15px 10px 0 0;
+    margin: 25px 10px 0 0;
   }
 
   .starter {
@@ -704,7 +702,7 @@ footer .logo {
   }
 
   .menu-restaurant {
-    height: 800px;
+    height: 950px;
   }
 
   .name-menu-bis {

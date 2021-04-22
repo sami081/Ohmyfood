@@ -403,6 +403,7 @@ footer{
     justify-content: space-between;
     >.text{
       font-family: 'Roboto-thin';
+      font-size: 0.95em;
     }
   }
   .text{
@@ -449,7 +450,7 @@ footer{
     flex-direction: column;
     justify-content: space-between;
     padding: 10px;
-    transition: all 2000ms ease-in-out
+    transition: all 900ms ease-in-out
   }
 
 
@@ -469,7 +470,7 @@ footer{
     }
     .test-sami {
       
-      background-color: #99E2D0;
+      
       
       border-radius: 0  0.8rem 0.8rem 0;
       
@@ -487,7 +488,8 @@ width: 0%;
     justify-content: center;
     align-items: center;
    display: flex;
-    transition: all 1100ms ease-in-out
+    transition: all 1100ms ease-in-out;
+    background-color: #99E2D0;
 
   }
   .sami-test{
@@ -533,7 +535,7 @@ width: 0%;
     width: 90%;
   }
   .menu-restaurant{
-    height: 1300px;
+    height: 1350px;
   }
   .restaurant>h2{
      margin-left: 25px;
@@ -621,7 +623,7 @@ width: 0%;
     border: none;
     outline: none;
     .sami-test2{
-      width: 10%;
+      width: 20%;
       height: 80%;
     }
     .test-sami {
@@ -631,12 +633,9 @@ width: 0%;
       -webkit-transition: height 2s ease-in-out, background 13s  ease-in-out;*/
       border-radius: 0 0 0.8rem 0.8rem;
       
-      height:30%;
+      height:25%;
     }
-    .test3{
-      height: 70%;
-
-    }
+    
   }
   .test-sami{
    
@@ -678,9 +677,9 @@ width: 100%;
   
   .title{justify-content: center;
   >h2{
-    margin: 15px 10px 0 0;
+    margin: 25px 10px 0 0;
   }
-  >.logo{margin: 15px 10px 0 0;}
+  >.logo{margin: 25px 10px 0 0;}
   }
   .starter{
     display: flex;
@@ -710,7 +709,7 @@ width: 100%;
     padding: 5px
   }
   .menu-restaurant{
-    height: 800px;
+    height: 950px;
   }
   .name-menu-bis{
     width: 20%;
