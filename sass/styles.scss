@@ -4,6 +4,11 @@
     background-image: url(../ressources/logo/heart-solid.svg);
 transition: 1.5s;}
 }
+.line {
+  border-bottom: 4px solid #99E2D0;
+  width: 40px;
+  margin: 5px 0 25px 22px;
+}
 
 @keyframes onandoff{
   0%{
@@ -13,6 +18,24 @@ transition: 1.5s;}
     opacity: 0;
     z-index: 1;
     visibility: hidden;
+  }
+}
+@keyframes bloc{
+  0%{
+    
+    margin-left: -200px;
+    border-radius: 100%;
+    transform: rotate(360deg);
+    transition: all 2s ease-in-out;
+  }
+  
+  
+  100%{
+    margin-left: 500px;
+    border-radius: 100%;
+    transform: rotate(360deg);
+    transition: all 2s ease-in-out;
+  
   }
 }
 @keyframes fadein{
@@ -26,6 +49,12 @@ transition: 1.5s;}
     transition: 200ms;
 }
 }
+.line{
+ 
+  border-bottom: 4px solid #99E2D0;
+    width: 40px;
+    margin: 5px 0 25px 22px;}
+
 .card-menu{
   animation: fadein 1.5s;
   -moz-animation: fadein 1.5s;
@@ -52,19 +81,19 @@ transition: 1.5s;}
 .load{    display: inline-block;
   width: 30px;
   height: 30px;
-  position: relative;
-  vertical-align: middle;
-  z-index: 1;
-  border: 4px solid #181818;
-  animation: loader 2s linear;
-  overflow: hidden;
   
-  transform: rotate(360deg);
-  transition: all 2s ease-in-out;
-}
-}
-
+  vertical-align: middle;
+  
+  border: 4px solid #181818;
  
+ 
+  animation: bloc 3s;
+  -moz-animation: bloc 3s;
+  -webkit-animation: bloc 3s;
+  -o-animation: bloc 3s;
+ 
+}
+}
   
 
   
@@ -132,7 +161,7 @@ body{
 .city{
   border: none;
     background-color: transparent;
-    width: 6rem;
+    width: 8rem;
 }
 .maps-button{
   border: none;
@@ -323,10 +352,11 @@ a{
   
 }
 footer{
-  background-color: black;
+  background-color: #353535;
   >h2{
     color:white;
     margin-left:25px;
+    font-family: 'Shrikhand';
   }
    .logo{
     padding-right: 10px;
@@ -393,7 +423,14 @@ footer{
   align-items: center;
 }
 @media only screen and (max-width: 450px){
-
+.text{
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  text-align: left;
+  display: block;
+  overflow: hidden;
+  margin-bottom: 2px;
+}
 
   
 
@@ -560,7 +597,7 @@ width: 0%;
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     width: 100%;
     transition: all 2000ms ease-in-out
   }
@@ -652,7 +689,7 @@ width: 100%;
   }
   .name-menu{
     width: 25%;
-    height:110px;
+    height:150px;
     flex-direction: column;
   }
   .main-courses{
@@ -669,6 +706,8 @@ width: 100%;
   }
   .text{
     justify-content:  center;
+    margin-bottom: 5px;
+    padding: 5px
   }
   .menu-restaurant{
     height: 800px;
