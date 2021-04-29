@@ -1,4 +1,7 @@
 @media only screen and (max-width: 450px) {
+  .restaurant > h2 {
+    margin-left: 25px;
+  }
   .dessert {
     display: flex;
     flex-direction: column;
@@ -63,6 +66,10 @@
   flex-direction: column;
 }*/
 @media only screen and (min-width: 451px) {
+  .restaurant {
+    align-items: center;
+    height: 550px;
+  }
   .starter {
     display: flex;
     flex-direction: column;
@@ -141,5 +148,25 @@
       width: 100%;
       text-align: center;
     }
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .choice-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 200px;
+  }
+  .restaurant {
+    align-items: center;
+    height: 350px;
+    justify-content: space-around;
+    > h2 {
+      margin: 0;
+    }
+  }
+
+  .card-choice {
+    width: 20%;
   }
 }

@@ -88,7 +88,7 @@ footer a {
   flex-direction: column;
   position: fixed;
   z-index: 5;
-  background-image: linear-gradient(#FF79DA 40%, #9356DC 60%);
+  background-image: linear-gradient(#ff79da 40%, #9356dc 60%);
   width: 100%;
   height: 100%;
   animation: onandoff 3s linear forwards;
@@ -140,6 +140,57 @@ body {
   font-family: "Roboto";
 }
 
+.line {
+  border-bottom: 4px solid #99e2d0;
+  width: 40px;
+}
+
+.logo-title {
+  font-family: "Shrikhand";
+}
+
+.banner {
+  display: flex;
+  margin-bottom: -4em;
+}
+
+.picture {
+  object-fit: cover;
+}
+
+.cutlery {
+  width: 1rem;
+  height: 1rem;
+}
+
+.hands {
+  width: 1rem;
+  height: 1rem;
+}
+
+.entree {
+  display: flex;
+  flex-direction: column;
+}
+
+.title-menu {
+  font-family: "Roboto-thin";
+  margin-bottom: 0;
+}
+
+@media only screen and (min-width: 451px) {
+  .banner {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 250px;
+    align-items: center;
+  }
+  .banner .picture {
+    width: 100%;
+    height: 100%;
+  }
+}
 @keyframes onandoff {
   0% {
     opacity: 1;
@@ -260,12 +311,23 @@ body {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.75);
 }
 
+.button {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  align-items: center;
+}
+
 @media only screen and (min-width: 451px) {
   .name-menu-bis {
     width: 20%;
   }
 }
 @media only screen and (max-width: 450px) {
+  .restaurant > h2 {
+    margin-left: 25px;
+  }
+
   .dessert {
     display: flex;
     flex-direction: column;
@@ -336,6 +398,11 @@ body {
   flex-direction: column;
 }*/
 @media only screen and (min-width: 451px) {
+  .restaurant {
+    align-items: center;
+    height: 550px;
+  }
+
   .starter {
     display: flex;
     flex-direction: column;
@@ -422,9 +489,40 @@ body {
     text-align: center;
   }
 }
+@media only screen and (min-width: 1024px) {
+  .choice-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 200px;
+  }
+
+  .restaurant {
+    align-items: center;
+    height: 350px;
+    justify-content: space-around;
+  }
+  .restaurant > h2 {
+    margin: 0;
+  }
+
+  .card-choice {
+    width: 20%;
+  }
+}
 @media only screen and (max-width: 450px) {
   .card-restaurant {
     height: 900px;
+  }
+
+  .sami-test {
+    width: 50%;
+    height: 50%;
+  }
+
+  .card-choice {
+    width: 90%;
+    height: 60px;
   }
 
   .all-card {
@@ -488,6 +586,22 @@ body {
   }
 }
 @media only screen and (min-width: 451px) {
+  .sami-test {
+    height: 50%;
+    width: 50%;
+  }
+
+  .sami-test2 {
+    border-radius: 100%;
+    height: 0%;
+    width: 0%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 2000ms ease-in-out;
+  }
+
   .card-restaurant {
     flex-wrap: wrap;
     height: 80%;
@@ -695,100 +809,6 @@ body {
   font-family: "Roboto-thin";
 }
 
-.line {
-  border-bottom: 4px solid #99e2d0;
-  width: 40px;
-}
-
-.logo-title {
-  font-family: "Shrikhand";
-}
-
-.banner {
-  display: flex;
-  margin-bottom: -4em;
-}
-
-.picture {
-  object-fit: cover;
-}
-
-.cutlery {
-  width: 1rem;
-  height: 1rem;
-}
-
-.hands {
-  width: 1rem;
-  height: 1rem;
-}
-
-.entree {
-  display: flex;
-  flex-direction: column;
-}
-
-.title-menu {
-  font-family: "Roboto-thin";
-  margin-bottom: 0;
-}
-
-.button {
-  display: flex;
-  justify-content: center;
-  height: 100%;
-  align-items: center;
-}
-
-@media only screen and (max-width: 450px) {
-  .sami-test {
-    width: 50%;
-    height: 50%;
-  }
-
-  .card-choice {
-    width: 90%;
-    height: 60px;
-  }
-
-  .restaurant > h2 {
-    margin-left: 25px;
-  }
-}
-@media only screen and (min-width: 451px) {
-  .sami-test {
-    height: 50%;
-    width: 50%;
-  }
-
-  .sami-test2 {
-    border-radius: 100%;
-    height: 0%;
-    width: 0%;
-    background-color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: all 2000ms ease-in-out;
-  }
-
-  .banner {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    height: 250px;
-    align-items: center;
-  }
-  .banner .picture {
-    width: 100%;
-    height: 100%;
-  }
-
-  .restaurant {
-    align-items: center;
-    height: 550px;
-  }
-}
 @media only screen and (min-width: 1024px) {
   .choice-list {
     display: flex;
