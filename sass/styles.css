@@ -352,10 +352,12 @@ body {
     flex-direction: column;
     height: 350px;
   }
-  .starter .title-menu {
+
+  .title-menu {
     margin-left: 20px;
   }
-  .starter .line {
+
+  .line {
     margin: 5px 0 0 22px;
   }
 

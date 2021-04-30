@@ -12,12 +12,12 @@
     display: flex;
     flex-direction: column;
     height: 350px;
-    .title-menu {
-      margin-left: 20px;
-    }
-    .line {
-      margin: 5px 0 0 22px;
-    }
+  }
+  .title-menu {
+    margin-left: 20px;
+  }
+  .line {
+    margin: 5px 0 0 22px;
   }
   .main-courses {
     display: flex;
@@ -61,7 +61,7 @@
       font-weight: 500;
     }
   }
-}/*
+} /*
 .menu {
   display: flex;
   flex-direction: column;
@@ -139,7 +139,7 @@
   }
 }
 /*end research section*/
-@media only screen and (min-width: 451px) and (max-width: 1023px){
+@media only screen and (min-width: 451px) and (max-width: 1023px) {
   .choice-list {
     height: 300px;
     display: flex;
