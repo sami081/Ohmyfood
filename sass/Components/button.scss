@@ -1,3 +1,4 @@
+@import "../Utils/variables.scss";
 .maps-button{
   border: none;
   display: flex;
@@ -19,9 +20,9 @@
   border-radius: 5rem;
   height: 3rem;
   width: 15em;
-  background-image: linear-gradient(#FF79DA, #9256dc);
+  background-image: linear-gradient($color-secondary, $color-primary);
   border: none;
-  color: white;
+  color: $color-text;
   box-shadow: 0 0.3rem 1rem rgb(0 0 0 / 30%);
   transition: all 0.3s;
   display: flex;
