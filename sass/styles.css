@@ -41,6 +41,18 @@ footer a {
     justify-content: space-around;
   }
 }
+.logo-header {
+  display: flex;
+  align-items: center;
+}
+.logo-header .restaurant-logo {
+  width: 50%;
+}
+.logo-header .title-header {
+  font-family: "Shrikhand";
+  margin: 15px 0 10px 0;
+}
+
 .first {
   width: 100%;
   justify-content: center;
@@ -59,18 +71,6 @@ footer a {
 .second > .title-header {
   margin: 0 !important;
   font-size: 1.5em;
-}
-
-.logo-header {
-  display: flex;
-  align-items: center;
-}
-.logo-header .restaurant-logo {
-  width: 50%;
-}
-.logo-header .title-header {
-  font-family: "Shrikhand";
-  margin: 15px 0 10px 0;
 }
 
 @media only screen and (min-width: 451px) {

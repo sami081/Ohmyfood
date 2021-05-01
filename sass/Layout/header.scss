@@ -1,21 +1,4 @@
-.first {
-  width: 100%;
-  justify-content: center;
-}
-.logo{
-  width: 1rem;
-  height: 1rem;
-}
-.second {
-  width: 80%;
-  justify-content: space-around;
-  height: 50px;
-  >.title-header{
-        margin: 0 !important;
-    font-size: 1.5em;
-}
-  }
-
+// all version//
 .logo-header {
   display: flex;
   align-items: center;
@@ -28,11 +11,32 @@
     margin: 15px 0 10px 0;
   }
 }
+.first {
+  width: 100%;
+  justify-content: center;
+}
+.logo {
+  width: 1rem;
+  height: 1rem;
+}
+.second {
+  width: 80%;
+  justify-content: space-around;
+  height: 50px;
+  > .title-header {
+    margin: 0 !important;
+    font-size: 1.5em;
+  }
+}
+//end all version//
+
+//version only tablet and desktop//
 @media only screen and (min-width: 451px) {
-  .second{
+  .second {
     width: 50%;
     margin-left: auto;
     margin-right: auto;
     max-width: 300px;
   }
 }
+//end version tablet and desktop//
