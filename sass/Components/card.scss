@@ -1,5 +1,5 @@
 @import "../Utils/variables.scss";
-@media only screen and (max-width: 450px){
+@media only screen and (max-width: 450px) {
   .card-restaurant {
     height: 900px;
   }
@@ -24,8 +24,14 @@
   .card-menu {
     height: 300px;
   }
-  .name-menu{
+  .name-menu {
     width: 90%;
+    height: 60px;
+    .information-menu{
+      .text{
+        font-size: 0.75rem !important;
+      }
+    }
     .test3 {
       width: 100%;
       display: flex;
@@ -39,6 +45,7 @@
         text-align: left;
         display: block;
         overflow: hidden;
+        font-size: 1rem;
       }
     }
     .test {
@@ -68,7 +75,15 @@
     }
   }
 }
-@media only screen and (min-width: 451px){
+@media only screen and (min-width: 451px) {
+  .text {
+    font-size: 0.9rem;
+  }
+  .information-menu{
+    .text{
+      font-size: 0.7rem;
+    }
+  }
   .sami-test {
     height: 50%;
     width: 50%;
@@ -86,14 +101,13 @@
   .card-restaurant {
     flex-wrap: wrap;
     height: 80%;
-    
   }
   .card-choice {
     height: 65px;
   }
-  .name-menu{
-    width: 25%;
-    height:150px;
+  .name-menu {
+    width: 20%;
+    height: 150px;
     flex-direction: column;
     .test3 {
       height: 100%;
@@ -123,15 +137,26 @@
     }
   }
 }
-@media only screen and (min-width: 451px) and (max-width: 1023px){
+@media only screen and (min-width: 451px) and (max-width: 1023px) {
   .link {
     width: 45%;
+  }
+  .card-choice {
+    width: 35%;
+  }
 }
-.card-choice {
-  width: 35%;
-}
-}
-@media only screen and (min-width: 1024px){
+@media only screen and (min-width: 1024px) {
+  .test{
+    font-size: 1.1rem;
+  }
+  .text{
+    font-size: 1.2rem;
+  }
+  .information-menu{
+    .text{
+      font-size: 1rem;
+    }
+  }
   .link {
     width: 20%;
   }
@@ -190,7 +215,7 @@
   align-items: center;
   justify-content: space-around;
 }
-.name-menu{
+.name-menu {
   display: flex;
   cursor: pointer;
   box-shadow: 5px 8px 12px -2px #d1d1d1;
@@ -203,17 +228,15 @@
     margin: 0;
     font-family: "Roboto";
     display: flex;
-    font-size: 0.9em;
   }
   .information-menu {
     display: flex;
     align-items: center;
     justify-content: space-between;
-  
+
     > .text {
       font-family: "Roboto-thin";
-      font-size: 0.8em;
-      width: 100%;
+      width: 95%;
       font-weight: 600;
     }
   }
@@ -269,7 +292,7 @@
     color: black;
     align-items: center;
     padding: 10px 20px 10px 10px;
-  
+
     > .text-information {
       display: flex;
       flex-direction: column;
@@ -286,5 +309,28 @@
         font-family: "Roboto-thin";
       }
     }
+  }
+}
+@media only screen and (min-width: 2000px){
+  .card-choice{
+    height: 100px;
+    .pastille{
+      height: 2rem !important;
+      width: 2rem !important;
+    }
+  }
+  .link{
+    height: 300px;
+  }
+}
+@media only screen and (min-width: 2000px) {
+  .text{
+    font-size: 1.8rem;
+  }
+  .test{
+    font-size: 1.5rem !important;
+  }
+  .name-menu{
+    height: 200px !important;
   }
 }

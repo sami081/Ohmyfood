@@ -1,3 +1,4 @@
+//loading//
 .load-body {
   display: flex;
   align-items: center;
@@ -30,9 +31,11 @@
     -o-animation: bloc 3s;
   }
 }
+//end loading//
 a {
   text-decoration: none;
 }
+//font-family//
 @font-face {
   font-family: "Shrikhand";
   src: url(../ressources/font_family/Shrikhand/Shrikhand-Regular.ttf) format("truetype");
@@ -49,6 +52,7 @@ a {
   font-family: "Roboto-bold";
   src: url(../ressources/font_family/Roboto/Roboto-Bold.ttf) format("truetype");
 }
+//end font family//
 body {
   margin: 0;
   padding: 0;
@@ -104,14 +108,54 @@ body {
     }
   }
 }
-@media only screen and (min-width: 1400px){
-  p{ 
+
+@media only screen and (max-width: 450px){
+.text-information{
+  h3{
     font-size: 1.2em;
+  }
+  p{
+    font-size: 1em;
+  }
+}
+}
+@media only screen and (min-width: 1248px){
+  .text-information{
+    h3{
+      font-size: 1.5em;
+    }
+    p{
+      font-size: 1.3em;
+    }
+  }
+  footer{
+    h2{
+      font-size: 1.7em;
+    }
+    a{
+      font-size: 1.3em;
+    }
   }
   h2{
-    font-size: 1.5em;
+    font-size: 1.7rem;
   }
-  body{
-    font-size: 1.2em;
+  h3{
+    font-size: 1.5rem;
+  }
+}
+@media only screen and (min-width: 2000px){
+  p{
+    font-size: 1.6rem  !important;
+  }
+  h2{
+    font-size: 2.4rem;
+  }
+  .text-information{
+    h3{
+      font-size: 2.2rem;
+    }
+  }
+  h3{
+    font-size: 1.7rem;
   }
 }
